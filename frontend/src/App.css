@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Root / Body Styles */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #d4f4dd; /* light green background */
+  color: #2a7a2a; /* main text color */
+  font-family: Arial, sans-serif;
+}
+
+/* Logo Styling */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 300ms, transform 300ms;
+}
+
+/* Hover effects on logo */
+.logo:hover {
+  filter: drop-shadow(0 0 2em #a0e17a); /* green glow */
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #f0e23a); /* bright yellow glow */
+}
+
+/* Spin animation for logo */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Only animate logo if user allows motion */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card styling */
+.card {
+  padding: 2em;
+  background-color: #e2f7d9; /* soft green card background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #2a7a2a; /* green text */
+}
+
+/* Documentation links */
+.read-the-docs {
+  color: #f0e23a; /* yellow text for links */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.read-the-docs:hover {
+  text-decoration: underline;
+}
+
