@@ -7,16 +7,21 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* ============================
+   🌿 Page Layout
+============================ */
 .signup-page {
   display: flex;
   min-height: 100vh;
   overflow: hidden;
 }
 
-/* ===== Left Section ===== */
+/* ============================
+   🌿 LEFT SECTION (Welcome / Branding)
+============================ */
 .signup-left {
   width: 50%;
-  background: linear-gradient(135deg, #1a7739, #47b36b);
+  background: linear-gradient(135deg, #14532d, #1a7739);
   color: white;
   display: flex;
   flex-direction: column;
@@ -47,21 +52,24 @@
 }
 
 .signup-left h1 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 10px;
+  color: #ffffff; /* ✅ White */
 }
 
 .signup-left h2 {
   font-weight: 500;
   margin-bottom: 10px;
+  color: #ffffff; /* ✅ White */
 }
 
 .signup-left p {
   font-size: 0.95rem;
-  max-width: 300px;
+  max-width: 320px;
   opacity: 0.9;
   margin-bottom: 30px;
+  color: #f1f1f1; /* ✅ Softer white */
 }
 
 .signin-btn {
@@ -80,14 +88,16 @@
   transform: scale(1.05);
 }
 
-/* ===== Right Section ===== */
+/* ============================
+   🌿 RIGHT SECTION (Form)
+============================ */
 .signup-right {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px;
-  background: white;
+  background: #f9f9f9;
   animation: fadeIn 1s ease-in-out;
 }
 
@@ -112,15 +122,18 @@
 }
 
 .signup-form h2 {
-  color: #1a7739;
-  font-weight: 700;
+  color: #ffffff; /* ✅ White */
+  background: linear-gradient(135deg, #1a7739, #47b36b);
+  padding: 12px;
+  border-radius: 8px;
   text-align: center;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 
 .signup-form p {
   text-align: center;
-  color: #555;
+  color: #444;
   margin-bottom: 25px;
   font-size: 0.95rem;
 }
@@ -141,28 +154,9 @@
   box-shadow: 0 0 5px rgba(26, 119, 57, 0.3);
 }
 
-.checkbox {
-  display: flex;
-  align-items: center;
-  font-size: 0.9rem;
-  color: #555;
-  margin-top: 10px;
-}
-
-.checkbox input {
-  margin-right: 10px;
-  transform: scale(1.2);
-}
-
-.checkbox a {
-  color: #1a7739;
-  text-decoration: none;
-}
-
-.checkbox a:hover {
-  text-decoration: underline;
-}
-
+/* ============================
+   🌿 Buttons & Links
+============================ */
 .signup-btn {
   width: 100%;
   background: linear-gradient(135deg, #1a7739, #47b36b);
@@ -198,7 +192,9 @@
   text-decoration: underline;
 }
 
-/* ===== Responsive ===== */
+/* ============================
+   🌿 Responsive Design
+============================ */
 @media (max-width: 900px) {
   .signup-page {
     flex-direction: column;
@@ -218,3 +214,9 @@
     width: 90%;
   }
 }
+/* Custom color for signup heading text */
+.app-title,
+.form-title {
+  color: white !important;
+}
+
